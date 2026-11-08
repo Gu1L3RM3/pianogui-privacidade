@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacidade do PianoGui</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Manrope:wght@400;600;700&display=swap">
+<style>
+  /* Layout: one reading column on the app's own night palette; a single dark look by choice, matching the game. */
+  :root {
+    --noite: #140C33;
+    --noite-2: #22145A;
+    --rosa: #FF3EA5;
+    --ciano: #29E7FF;
+    --sodio: #FFB547;
+    --nevoa: #D9D1FF;
+    --nevoa-dim: #A99FD6;
+    --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+    --texto: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color-scheme: dark;
+  }
+  html { background: var(--noite); }
+  body { margin: 0; }
+  body {
+    background: var(--noite);
+    color: var(--nevoa);
+    font: 400 17px/1.65 var(--texto);
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 48px 72px;
+  }
+  main { max-width: 40rem; margin: 0 auto; display: grid; gap: 40px; }
+  header { display: grid; gap: 12px; padding-bottom: 32px; border-bottom: 1px solid var(--noite-2); }
+  .marca { font: 700 20px/1 var(--display); color: var(--rosa); letter-spacing: 0.02em; }
+  h1 { font: 900 40px/1.05 var(--display); color: var(--nevoa); margin: 0; text-wrap: balance; }
+  .data { color: var(--nevoa-dim); font-size: 14px; margin: 0; font-variant-numeric: tabular-nums; }
+  .resumo {
+    margin: 0; padding: 20px 24px; background: var(--noite-2); border-radius: 12px;
+    font-size: 17px; line-height: 1.6;
+  }
+  .resumo strong { color: var(--sodio); font-weight: 700; }
+  section { display: grid; gap: 12px; }
+  h2 { font: 700 28px/1.15 var(--display); color: var(--ciano); margin: 0; text-wrap: balance; }
+  p, ul { margin: 0; }
+  ul { padding-left: 1.2em; display: grid; gap: 8px; }
+  li::marker { color: var(--rosa); }
+  a { color: var(--ciano); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--ciano); outline-offset: 2px; border-radius: 2px; }
+  .contato {
+    font-family: var(--texto); font-weight: 600; color: var(--nevoa);
+    user-select: all; overflow-wrap: anywhere;
+  }
+  footer { color: var(--nevoa-dim); font-size: 14px; border-top: 1px solid var(--noite-2); padding-top: 24px; }
+  @media (max-width: 480px) { h1 { font-size: 34px; } h2 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="marca">PianoGui</span>
+    <h1>Política de privacidade</h1>
+    <p class="data">Atualizada em 8 de novembro de 2026</p>
+  </header>
+
+  <p class="resumo"><strong>Resumindo:</strong> o PianoGui não tem conta, não tem anúncios e não coleta seus dados. Tudo o que você importa e joga fica guardado só no seu celular. A única coisa que sai do aparelho é a busca de capa, e só se você pedir.</p>
+
+  <section>
+    <h2>Quem somos</h2>
+    <p>O PianoGui é um jogo rítmico para Android criado por Guilherme Abreu Cavazzani, desenvolvedor independente no Brasil. Esta política explica o que o app faz com as suas informações.</p>
+  </section>
+
+  <section>
+    <h2>O que fica no seu celular</h2>
+    <p>Para funcionar, o app guarda no armazenamento interno do próprio aparelho:</p>
+    <ul>
+      <li>as músicas que você importa e as fases geradas a partir delas;</li>
+      <li>título, artista e capa de cada música, lidos do próprio arquivo ou escolhidos por você;</li>
+      <li>pontuações, estrelas, coroas, quantas vezes você tocou cada música e suas playlists;</li>
+      <li>suas configurações, como calibração de atraso, vibração e sons.</li>
+    </ul>
+    <p>Nada disso é enviado para nós nem para outra pessoa. Não temos servidor e não vemos o que você joga. Se você desinstalar o app ou apagar os dados dele nas configurações do Android, tudo isso é apagado.</p>
+  </section>
+
+  <section>
+    <h2>Busca de capas (opcional)</h2>
+    <p>Você pode buscar a capa de uma música na internet. Na primeira vez, o app pergunta se você concorda. Só depois disso ele envia o título e o artista da música para o serviço de busca do iTunes, da Apple, e baixa a imagem escolhida dos servidores da Apple.</p>
+    <p>Nessa busca, a Apple recebe o texto pesquisado e, como em qualquer acesso à internet, o endereço IP do seu aparelho. O uso dessas informações pela Apple segue a <a href="https://www.apple.com/br/legal/privacy/" rel="noopener">política de privacidade da Apple</a>. Se você não usar a busca, o app não acessa a internet.</p>
+  </section>
+
+  <section>
+    <h2>O que o app não faz</h2>
+    <ul>
+      <li>Não pede login nem cria conta.</li>
+      <li>Não mostra anúncios.</li>
+      <li>Não usa ferramentas de análise, rastreamento ou relatório de falhas de terceiros.</li>
+      <li>Não acessa câmera, microfone, localização, contatos nem seus outros arquivos. Ele lê só os arquivos que você escolhe no seletor do Android.</li>
+      <li>Não vende nem compartilha dados, porque não coleta nenhum.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Permissões do Android</h2>
+    <ul>
+      <li><strong>Internet:</strong> usada só na busca de capas descrita acima.</li>
+      <li><strong>Vibração:</strong> para vibrar ao tocar as notas. Dá para desligar nas configurações do jogo.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Crianças</h2>
+    <p>O app não coleta dados de ninguém, incluindo crianças.</p>
+  </section>
+
+  <section>
+    <h2>Músicas que você importa</h2>
+    <p>O PianoGui não vem com músicas e não as distribui. Você é responsável por ter o direito de usar os arquivos que importa.</p>
+  </section>
+
+  <section>
+    <h2>Mudanças nesta política</h2>
+    <p>Se o app passar a tratar dados de outro jeito, esta página será atualizada antes, com a nova data no topo.</p>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <p>Dúvidas ou pedidos sobre privacidade, incluindo os previstos na LGPD (Lei 13.709/2018):</p>
+    <p class="contato">cavazzani.projetos@gmail.com</p>
+  </section>
+
+  <footer>PianoGui · Guilherme Abreu Cavazzani · Brasil</footer>
+</main>
+</body>
+</html>
